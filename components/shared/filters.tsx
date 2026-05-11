@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Title } from "./title";
 import { FilterCheckbox } from "./filter-checkbox";
-import { Input } from "../ui";
+import { Input, RangeSlider } from "../ui";
 
 interface Props {
   className?: string;
@@ -12,12 +12,13 @@ export const Filters: React.FC<Props> = ({ className }) => {
   return (
     <div className={cn(className)}>
       <Title text="Filters" size="sm" className="mb-5 font-bold" />
-
+      {/* Checkboxes */}
       <div className="flex flex-col gap-4">
         <FilterCheckbox text="Can collect" value="1" />
         <FilterCheckbox text="New" value="2" />
       </div>
 
+      {/* Price Filters */}
       <div className="mt-5 border-y border-y-neutral-100 py-6 pb-7">
         <p className="font-bold mb-3">Price from and to:</p>
         <div className="flex gap-3 mb-5">
@@ -36,6 +37,8 @@ export const Filters: React.FC<Props> = ({ className }) => {
             value={50}
           />
         </div>
+
+        <RangeSlider min={0} max={100} step={10} />
       </div>
     </div>
   );
