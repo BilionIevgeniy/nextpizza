@@ -20,7 +20,7 @@ export const FilterCheckbox: React.FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={cn("flex items-center space-x-2 my-2", className)}>
+    <div className={cn("flex items-center space-x-2", className)}>
       <Checkbox
         onCheckedChange={onCheckedChange}
         value={value}
