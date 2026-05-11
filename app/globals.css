@@ -44,28 +44,6 @@ html {
   }
 }
 
-* {
-  font-family: var(--font-nunito), sans-serif;
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 4px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 6px;
-  background: #fff;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: #dbdadd;
-  border-radius: 6px;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #dbdadd;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -91,4 +69,26 @@ html {
 
 #nprogress .spinner-icon {
   @apply border-t-primary border-l-primary !important;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #dbdadd;
+  border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #dbdadd;
+}
+
+* {
+  font-family: var(--font-nunito), sans-serif;
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "./container";
 import Image from "next/image";
 import { cn } from "../../lib/utils";
+import { Button } from "../ui/button";
+import { Container } from "./container";
 
 interface Props {
   className?: string;
@@ -10,9 +11,9 @@ interface Props {
 export const Header: React.FC<Props> = ({ className }) => {
   return (
     <header className={cn("border border-b", className)}>
-      <Container className="flex h-16 items-center justify-between py-8">
+      <Container className="flex items-center justify-between py-8">
         {/* Left side */}
-        <div>
+        <div className="flex items-center gap-4">
           <Image src="/logo.png" alt="Logo" width={35} height={35} />
           <div>
             <h1 className="text-2xl uppercase font-bold">Pizzeria</h1>
@@ -20,6 +21,11 @@ export const Header: React.FC<Props> = ({ className }) => {
               It couldn`t be tastier.
             </p>
           </div>
+        </div>
+
+        {/* Right side */}
+        <div className="flex items-center gap-3">
+          <Button>Enter</Button>
         </div>
       </Container>
     </header>
