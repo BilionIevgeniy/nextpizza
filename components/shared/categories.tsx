@@ -1,13 +1,12 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { Button } from "../ui";
 
 interface Props {
   className?: string;
 }
 const categories = [
-  "All Pizzas",
+  "Pizzas",
   "Combo",
   "Snacks",
   "Cocktails",
@@ -34,7 +33,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
               href={"/"}
               key={index}
             >
-              <Button variant="secondary">{category}</Button>
+              <button>{category}</button>
             </Link>
           );
         })}
