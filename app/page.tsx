@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/";
-import { Container } from "@/components/shared";
-import { Title } from "@/components/shared";
+import { Categories, Container, Title } from "@/components/shared";
 
 export default function Home() {
   return (
-    <Container>
-      <Title text="Pizzeria" size="lg" className="font-extrabold" />
+    <Container className="mt-5">
+      <Title text="All pizzas" size="lg" className="font-extrabold" />
+      <Categories />
     </Container>
   );
 }
