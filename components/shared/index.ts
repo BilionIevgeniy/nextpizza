@@ -2,7 +2,7 @@ export { Header } from "./header";
 export { Container } from "./container";
 export { Title } from "./title";
 export { Categories } from "./categories";
-// export { TopBar } from "./top-bar";
+export { TopBar } from "./top-bar";
 export { SortPopup } from "./sort-popup";
 // export { CartButton } from "./cart-button";
 // export { ProductCard } from "./product-card";
