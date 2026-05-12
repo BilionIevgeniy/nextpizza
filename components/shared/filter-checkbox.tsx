@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Checkbox } from "../ui";
 
-interface Props {
+export interface FilterCheckboxProps {
   text?: string;
   value?: string;
   onCheckedChange?: (value: boolean) => void;
@@ -11,7 +11,7 @@ interface Props {
   className?: string;
 }
 
-export const FilterCheckbox: React.FC<Props> = ({
+export const FilterCheckbox: React.FC<FilterCheckboxProps> = ({
   text,
   value,
   onCheckedChange,
